@@ -18,6 +18,7 @@ const app = new Vue({
     /** Called after the Vue app has been created. A good place to put startup code */
     created: function() {
 
+        this.subpage="TOOP"
     }, // --- End of created hook --- //
 
     /** Called once all Vue component instances have been loaded and the virtual DOM built */
