@@ -54,6 +54,12 @@ h1,h2,h3{
   height: auto;
   align-items: center;
 }
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 25px;
+}
 .margin-20{
   padding-top: 20px;
 }
@@ -62,6 +68,7 @@ li,p{
   color: var(--white-color);
   margin-left: 10%;
   margin-right: 5%;
+  font-size: 20px;
 }
 
 .container {
@@ -73,6 +80,7 @@ li,p{
   display: block;
   background: var(--black-color);
   min-height: 100vh;
+  height: auto;
 }
 .resize{
   width: 90%;
@@ -82,6 +90,7 @@ li,p{
   align-items: center;
   margin: auto;
   background: var(--gray-color);
+  height: auto;
 }
 
 .container-default-single{
