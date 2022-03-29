@@ -77,16 +77,28 @@ h1,h2,h3{
   justify-content: center;
   align-items: center;
   margin: auto;
+  background: var(--black-color);
+}
+
+.container-default-single{
+  margin-top: 50px;
+  height: auto;  
+  margin: auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: var(--black-color);
 }
 
 .container-default{
   margin-top: 50px;
-  width: 80%;
   height:auto;  
   margin:auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--black-color);
+  padding-top: 10px;
 }
 
 .container-default-L {
@@ -121,17 +133,6 @@ h1,h2,h3{
 
 
 /*Template abaixo*/
-
-
-
-
-.container-default-single{
-  width: 100%;
-  height: auto;  
-  display: block;
-  background: var(--white-color);
-  margin:auto; 
-}
 
 
 .wrap-metade {
