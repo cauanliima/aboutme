@@ -48,7 +48,8 @@ button, input {
   max-height: 360px;
   */
   width: 100%;
-  margin: auto;
+  height: auto;
+  min-height: 100vh;
   display: block;
   background: var(--black-color);
 }
