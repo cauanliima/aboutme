@@ -11,8 +11,10 @@
     <div id="app" v-cloak>
         <b-container id="app_container" class="container">
             <div class="resize">
-                <div class="container-default">   
+                <div class="container-default">
+                    <div class="container-default" style="width: 40%;"> 
                     <img src="./img/cauan.jpeg" height="350" width="auto">
+                    </div>
                     <div class="container-default-single" >
                         <div class="title-form margin-20" >Cauan Marcelo lima</div>
                         
@@ -34,16 +36,43 @@
                 </div>
                 
                 <div class="container-default" style="padding:20px" >
-                    <div class="container-default"><h2>Resumo</h2></div>
-                    <div class="container-default"><h2>Projetos</h2></div>
-                    <div class="container-default"><h2>Produções</h2></div>
+                    <div @click="subpag='Resumo'" class="container-default"><h2>Resumo</h2></div>
+                    <div @click="subpag='Formação'" class="container-default"><h2>Formação</h2></div>
+                    <div @click="subpag='Projetos'" class="container-default"><h2>Projetos</h2></div>
+                    <div @click="subpag='Produções'" class="container-default"><h2>Produções</h2></div>
                 </div>
-                <h3>
-                    Me chamo Cauan, sou bacharel em Ciência e Tecnologias pela UFRN
-                </h3>
-                <h3>
-                    Atualmente faço Engenharia de computação conjunta com uma bolsa de pesquisa na UFRN
-                </h3>
+                <div v-if="subpag=='Resumo'">
+                    <p>
+                        Me chamo Cauan, sou mineiro natural de Lagoa Santa, estudo na UFRN (Universidade Federal do Rio Grande do Norte) desde 2017 me graduei como bacharel em Ciência e Tecnologias.
+                    </p>
+                    <p>
+                        Em sequência ao barcharel estou cursando Engenharia de computação e tenho uma bolsa de pesquisa do IMD juntamente com o NUPLAM.
+                    </p>
+                </div>
+                <div v-if="subpag=='Formação'">
+                    <ol>
+                        <li>UFRN - Graduando em Engenharia da Computação - desde outubro de 2021.</li>
+                        <li>UFRN - Bacharelado em Ciências e Tecnologia com ênfase em Tecnologia da Computação - de julho de 2017 concluindo em setembro de 2021.</li>
+                        <li>Serviço Nacional de Aprendizagem Industrial (SENAI) - Técnico em Automação Industrial - de julho de 2015 a dezembro de 2016</li>
+                    </ol>
+                </div>
+                <div v-if="subpag=='Projetos'">
+                    <ol>
+                        <li>Instituto metrópole digital IMD - Bolsista de pesquisa IOT - Desde julho.</li>
+                        <li>Departamento de matemática (DMAT/UFRN) - monitor de Cálculo I - de junho a outubro de 2021</li>
+                        <li>Escola de Ciências e Tecnologia (ECT/UFRN) - monitor de Cálculo II - de março de 2020 a abril de 2021.</li>
+                        <li>Escola de Ciências e Tecnologia (ECT/UFRN) - monitor de Cálculo I - de abril de 2019 a dezembro de 2019.</li>
+                        <li>Centro de Educação (CE/UFRN) - bolsista de apoio técnico - de setembro de 2017 a abril de 2019.</li>
+                        <li>SENAI - Técnico Instrumentista - de julho de 2016 a dezembro de 2016.</li>
+                    </ol>
+                </div>
+                <div v-if="subpag=='Produções'">
+                    <h3>ARTIGOS</h3>
+                    <ol>
+                        <li> SILVA, A. C. ; LIMA, C. M. ; MOREIRA, D. A. . Desenvolvimento e Aplicação de Testes Online Utilizando a Ferramenta Google Forms. In: Encontro integrado dos programas de ensino da UFRN, 2020, Natal-RN. Anais do evento - Encontro integrado dos programas de ensino da UFRN, 2020.</li>
+                        <li> LIMA, C. M.; CARVALHO, E. J. F. ; COSTA, V. H. R. S. . Ciclo rápido de exercícios e aprendizagem ativa em disciplinas de matemática.. In: Encontro integrado dos programas de ensino da UFRN, 2019, Natal-RN. Anais do evento - Encontro integrado dos programas de ensino da UFRN, 2019.</li>
+                    </ol>
+                </div>
                 
                 <!--
                 <div class="container-default">
