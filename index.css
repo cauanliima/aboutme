@@ -49,10 +49,18 @@ button, input {
   */
   width: 100%;
   margin: auto;
-  height: 100vh;
-  display: flex;
+  display: block;
   background: var(--black-color);
+}
 
+.container-default {
+  width: 80%;
+  height:auto;  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-color); 
 }
 
 .title-form{
@@ -72,14 +80,7 @@ button, input {
 
 
 
-.container-default {
-  width: 100%;
-  height:auto;  
-  display: block;
-  justify-content: center;
-  align-items: center;
-  background: var(--white-color); 
-}
+
 .container-default-single{
   width: 100%;
   height: auto;  
