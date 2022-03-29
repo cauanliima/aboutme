@@ -72,6 +72,7 @@ li,p{
   width: 100%;
   display: block;
   background: var(--black-color);
+  min-height: 100vh;
 }
 .resize{
   width: 90%;
