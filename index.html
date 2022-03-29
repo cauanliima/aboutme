@@ -12,7 +12,7 @@
         <b-container id="app_container" class="container">
             <div class="resize">
                 <div class="container-default">
-                    <div class="container-default" style="width: 40%;"> 
+                    <div class="container-default"> 
                     <img src="./img/cauan.jpeg" height="350" width="auto">
                     </div>
                     <div class="container-default-single" >
@@ -36,10 +36,10 @@
                 </div>
                 
                 <div class="container-default" style="padding:20px" >
-                    <div @click="subpag='Resumo'" class="container-default"><h2>Resumo</h2></div>
-                    <div @click="subpag='Formação'" class="container-default"><h2>Formação</h2></div>
-                    <div @click="subpag='Projetos'" class="container-default"><h2>Projetos</h2></div>
-                    <div @click="subpag='Produções'" class="container-default"><h2>Produções</h2></div>
+                    <div @click="subpag='Resumo'" class="container-default"><h2 class="link">Resumo</h2></div>
+                    <div @click="subpag='Formação'" class="container-default"><h2 class="link">Formação</h2></div>
+                    <div @click="subpag='Projetos'" class="container-default"><h2 class="link">Projetos</h2></div>
+                    <div @click="subpag='Produções'" class="container-default"><h2 class="link">Produções</h2></div>
                 </div>
                 <div v-if="subpag=='Resumo'">
                     <p>
