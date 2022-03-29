@@ -3,7 +3,7 @@ const app = new Vue({
     el: '#app',
     data() { 
         return {
-            subpag: "pessoal",
+            subpag: "Pessoal",
 
 
     }}, // --- End of data --- //
@@ -17,7 +17,6 @@ const app = new Vue({
 
     /** Called after the Vue app has been created. A good place to put startup code */
     created: function() {
-
         this.subpage="TOOP"
     }, // --- End of created hook --- //
 
