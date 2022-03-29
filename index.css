@@ -41,6 +41,22 @@ button, input {
 	border: none;
   margin-top: 7px;
 }
+img{
+  margin-top: 20px;
+  margin: auto;
+  display: block;
+}
+h1,h2,h3{
+  display: block;
+  color: var(--white-color);
+  text-align:center;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+.margin-20{
+  padding-top: 20px;
+}
 
 .container {
   /*
@@ -53,16 +69,43 @@ button, input {
   display: block;
   background: var(--black-color);
 }
-
-.container-default {
-  width: 80%;
-  height:auto;  
-  display: flex;
-  flex-direction: row;
+.resize{
+  width: 75%;
+  height: auto;
+  min-height: 100vh;
+  display: block;
   justify-content: center;
   align-items: center;
-  background: var(--white-color); 
+  margin: auto;
 }
+
+.container-default{
+  margin-top: 50px;
+  width: 80%;
+  height:auto;  
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-default-L {
+  margin-top: 50px;
+  width: 60%;
+  height:auto;  
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.container-default-R {
+  margin-top: 50px;
+  width: 20%;
+  height:auto;  
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .title-form{
   display: block;
