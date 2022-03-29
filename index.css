@@ -70,7 +70,7 @@ h1,h2,h3{
   background: var(--black-color);
 }
 .resize{
-  width: 75%;
+  width: 90%;
   height: auto;
   min-height: 100vh;
   display: block;
