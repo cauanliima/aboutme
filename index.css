@@ -1,0 +1,173 @@
+/*
+  Variáveis
+*/
+
+:root {
+  --main-color: #407bff;
+  --link-color: #666666;
+  --text1: #999999;
+  --highligth-text: #333333;
+  --input-text: #555555;
+  --white-color: #FFFFFF;
+  --point-list: #CCCCCC;
+  --line-input: #D9D9D9;
+  --black-color: #222222;
+}
+
+/*
+  Zerar estilos
+*/
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: sans-serif;
+  overflow: hidden;
+
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+button, input {
+	outline: none !important;
+	border: none;
+  margin-top: 7px;
+}
+
+.container {
+  /*
+  max-width:480px;
+  max-height: 360px;
+  */
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--black-color);
+
+}
+
+/*Template abaixo*/
+
+
+
+.container-default {
+  width: 100%;
+  height:auto;  
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-color); 
+}
+.container-default-single{
+  width: 100%;
+  height: auto;  
+  display: block;
+  background: var(--white-color);
+  margin:auto; 
+}
+
+
+.wrap-metade {
+  width: 50%;
+  background: var(--white-color);
+  display: block;
+}
+
+.div-text{
+  height:auto;
+  width:100%;
+  display: block;
+  background-color: var(--white-color);
+  margin-top: 8px;
+  margin-block-end: 8px;
+}
+
+
+/*
+  Formulário
+*/
+
+.title-form{
+  display: block;
+  color: var(--highligth-text);
+  line-height: 1.1;
+  text-align:center;
+  width: 100%;
+  height: auto;
+  font-size: 45px;
+  align-items: center;
+}
+
+.text-form {
+  display: block;
+  font-size: 30px;
+  color: var(--main-color);
+  line-height: 1.2;
+  text-align: center;
+
+}
+
+.text-form-status {
+  display: block;
+  font-size: 32px;
+  color: var(--main-color);
+  line-height: 2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.text-form-black {
+  display: block;
+  font-size: 30px;
+  color: var(--black-color);
+  line-height: 2;
+  text-align: center;
+
+}
+
+
+/*
+  Botão
+*/
+
+.container-form-btn-metade {
+  width: 50%;
+  justify-content: center;
+}
+
+.container-form-btn {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+button {
+  font-size: 30px;
+  color: var(--white-color);
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  height: 80px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  margin:3px;
+}
