@@ -12,6 +12,7 @@
   --point-list: #CCCCCC;
   --line-input: #D9D9D9;
   --black-color: #222222;
+  --gray-color: #444;
 }
 
 /*
@@ -77,7 +78,7 @@ h1,h2,h3{
   justify-content: center;
   align-items: center;
   margin: auto;
-  background: var(--black-color);
+  background: var(--gray-color);
 }
 
 .container-default-single{
@@ -87,7 +88,7 @@ h1,h2,h3{
   display: block;
   justify-content: center;
   align-items: center;
-  background: var(--black-color);
+
 }
 
 .container-default{
@@ -97,7 +98,6 @@ h1,h2,h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--black-color);
   padding-top: 10px;
 }
 
@@ -126,7 +126,7 @@ h1,h2,h3{
   text-align:center;
   width: 100%;
   height: auto;
-  font-size: 30px;
+  font-size: 40px;
   align-items: center;
 }
 
