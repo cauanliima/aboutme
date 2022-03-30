@@ -4,6 +4,7 @@ const app = new Vue({
     data() { 
         return {
             subpag: "Resumo",
+            infPes: false,
 
 
     }}, // --- End of data --- //
