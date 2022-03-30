@@ -93,6 +93,7 @@ li,p{
   height: auto;
 }
 .resize{
+  padding: 30px;
   width: 90%;
   min-height: 100vh;
   display: block;
