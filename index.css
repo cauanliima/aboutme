@@ -72,8 +72,8 @@ h1,h2,h3{
 h1{
   font-size: 40px;
 }
-h2{
-  font-size: 25px;
+h2,a{
+  font-size: 30px;
 }
 .text-form {
   text-align:left;
@@ -157,11 +157,13 @@ h2{
   align-items: center;
 }
 .link{
+  text-transform: uppercase;
   color: var(--link-color);
   text-align:center;
   width: 100%;
   align-items: center;
   cursor: pointer;
+  font-size: 35px;
 }
 a{
   color: var(--link-color);
