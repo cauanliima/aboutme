@@ -51,26 +51,29 @@
                     <div v-if="subpag!='Produções'" @click="subpag='Produções'" class="container-default"><h1 class="link">Produções</h1></div>
                 </div>
                 <h2 class="container-default" style="text-transform: uppercase"> {{subpag}}</h2>
-                <div class="container-default-single" v-if="subpag=='Resumo'">
-                    <div class="text-form">Me chamo Cauan, tenho 23 anos e sou mineiro, natural de Lagoa Santa.</div>
-                    <div class="text-form">Sou graduado em bacharel em Ciência e Tecnologias na Universidade Federal do Rio Grande do Norte (UFRN).</div>
-                    <div class="text-form">Atualmente curso Engenharia de Computação na UFRN e tenho uma bolsa de pesquisa do Instituto Metrópole Digital (IMD) juntamente com o Núcleo de Pesquisa em Alimentos e Medicamentos (NUPLAM).</div>
+                <div v-if="subpag=='Resumo'">
+                    <p>Me chamo Cauan, tenho 23 anos e sou mineiro, natural de Lagoa Santa.
+                    ou graduado em bacharel em Ciência e Tecnologias na Universidade Federal do Rio Grande do Norte (UFRN).
+                    </p>
+                    <p>
+                    Atualmente curso Engenharia de Computação na UFRN e tenho uma bolsa de pesquisa do Instituto Metrópole Digital (IMD) juntamente com o Núcleo de Pesquisa em Alimentos e Medicamentos (NUPLAM).
+                    </p>
                 </div>
                 <div class="container-default-single"  v-if="subpag=='Formação'">
                     <ol>
-                        <li>°UFRN - Graduando em Engenharia da Computação - desde outubro de 2021.</li>
-                        <li>°UFRN - Bacharelado em Ciências e Tecnologia com ênfase em Tecnologia da Computação - de julho de 2017 concluindo em setembro de 2021.</li>
-                        <li>°Serviço Nacional de Aprendizagem Industrial (SENAI) - Técnico em Automação Industrial - de julho de 2015 a dezembro de 2016.</li>
+                        <li>UFRN - Graduando em Engenharia da Computação - desde outubro de 2021.</li>
+                        <li>UFRN - Bacharelado em Ciências e Tecnologia com ênfase em Tecnologia da Computação - de julho de 2017 concluindo em setembro de 2021.</li>
+                        <li>Serviço Nacional de Aprendizagem Industrial (SENAI) - Técnico em Automação Industrial - de julho de 2015 a dezembro de 2016.</li>
                     </ol>
 
                     <h2>CONHECIMENTOS</h2>
                     <ol>
                         <li>Linux</li>
-                        <li>Banco de dados: MongoDB, MariaDB, MySQL</li>
+                        <li>MongoDB, MariaDB, MySQL, Mosquito</li>
                         <li>MQTT e ModBus</li>
                         <li>Desenvolvimento Web embarcado em Raspberry utilizando NodeRed </li>
                         <li>Docker, Docker-compose</li>
-                        <li>Python, JavaScrypt, C++, C,HTML,CSS, Vue React e Matlab</li>
+                        <li>Python, JavaScrypt, C++, C, HTML, CSS, Vue React e Matlab</li>
                     </ol>
 
                 </div>
@@ -78,24 +81,55 @@
                     
                     
                     <ol>
-                        <li @click="infPes=true">°IMD/UFRN - Bolsista de pesquisa IOT - Desde julho.</li>
-                        <li>°Departamento de matemática (DMAT/UFRN) - monitor de Cálculo I - de junho a outubro de 2021.</li>
-                        <li>°Escola de Ciências e Tecnologia (ECT/UFRN) - monitor de Cálculo II - de março de 2020 a abril de 2021.</li>
-                        <li>°(ECT/UFRN) - monitor de Cálculo I - de abril de 2019 a dezembro de 2019.</li>
-                        <li>°Centro de Educação (CE/UFRN) - bolsista de apoio técnico - de setembro de 2017 a abril de 2019.</li>
-                        <li>°SENAI - Técnico Instrumentista - de julho de 2016 a dezembro de 2016.</li>
+                        
+                        <li @click="infPes=true">
+                            
+                             IMD/UFRN - Bolsista de pesquisa IOT - Desde julho
+                             <div class="container-default-single" style="margin-left:5%;">
+                             <div class="container-default">
+                                <img src="./img/UFRNLogo.png"  width="auto" height="80">
+                                <img src="./img/nuplamLogo.png"  width="auto" height="80">
+                                <img src="./img/IMDLogo.png"  width="auto" height="80">
+                             </div>
+                            <div>
+                             Participo do projeto ODDigital que consiste em informatizar o processo de manipulação de medicamentos que ocorre no NUPLAM.
+                             Faço contribuições em IOT, desenvolvendo um dispositivo com Raspberry, leitor RFID e LCD,
+                             com a finalidade de registrar as limpezas dos locais de processamento de medicamentos no qual
+                             seguem um protocolo rigoroso que é implementado na aplicação.
+                             Os conhecimentos aplicados para o desenvolvimento foram:
+                            </div>
+                             <ol>
+                                 <li>JavaScrypt, CSS, Vue React;</li>
+                                 <li>MQTT, MongoDB, MySQL, Mosquito;</li>
+                                 <li>Docker, Docker-compose;</li>
+                                 <li>NodeRed, Inventor (na confecção do case);</li>
+                                 <li>UML.</li>
+                            </ol>
+
+                        </div>
+                        </li>
+                        <li>Departamento de matemática (DMAT/UFRN) - monitor de Cálculo I - de junho a outubro de 2021.</li>
+                        <li>Escola de Ciências e Tecnologia (ECT/UFRN) - monitor de Cálculo II - de março de 2020 a abril de 2021.</li>
+                        <li>(ECT/UFRN) - monitor de Cálculo I - de abril de 2019 a dezembro de 2019.</li>
+                        <li>Centro de Educação (CE/UFRN) - bolsista de apoio técnico - de setembro de 2017 a abril de 2019.</li>
+                        <li>SENAI - Técnico Instrumentista - de julho de 2016 a dezembro de 2016.</li>
                     </ol>
                 </div>
                 <div class="container-default-single"  v-if="subpag=='Produções'">
                     <h2 class="margin-20">ARTIGOS</h2>
                     <ol>
-                        <li> °SILVA, A. C. ; LIMA, C. M. ; MOREIRA, D. A. . Desenvolvimento e Aplicação de Testes Online Utilizando a Ferramenta Google Forms. In: Encontro integrado dos programas de ensino da UFRN, 2020, Natal-RN. Anais do evento - Encontro integrado dos programas de ensino da UFRN, 2020.</li>
-                        <li> °LIMA, C. M.; CARVALHO, E. J. F. ; COSTA, V. H. R. S. . Ciclo rápido de exercícios e aprendizagem ativa em disciplinas de matemática.. In: Encontro integrado dos programas de ensino da UFRN, 2019, Natal-RN. Anais do evento - Encontro integrado dos programas de ensino da UFRN, 2019.</li>
+                        <li> SILVA, A. C. ; LIMA, C. M. ; MOREIRA, D. A. . Desenvolvimento e Aplicação de Testes Online Utilizando a Ferramenta Google Forms. In: Encontro integrado dos programas de ensino da UFRN, 2020, Natal-RN. Anais do evento - Encontro integrado dos programas de ensino da UFRN, 2020.</li>
+                        <li> LIMA, C. M.; CARVALHO, E. J. F. ; COSTA, V. H. R. S. . Ciclo rápido de exercícios e aprendizagem ativa em disciplinas de matemática.. In: Encontro integrado dos programas de ensino da UFRN, 2019, Natal-RN. Anais do evento - Encontro integrado dos programas de ensino da UFRN, 2019.</li>
                     </ol>
 
                     <h2 class="margin-20">TCC do técnico em Automação Industrial</h2>
                     <ol style="padding-top: 10px">
-                        <li>°PLANTA DIDÁTICA DE VAZÃO - 2016 <a href="./docs/TAI01_DOC_PDV=B.pdf">DOCUMENTAÇÃO</a></li>
+                        <div class="container-default-single">
+                            <div class="container-default">
+                               <img src="./img/senaiLogo.png"  width="auto" height="40">
+                            </div>
+                        </div>
+                        <li>PLANTA DIDÁTICA DE VAZÃO - 2016 <a href="./docs/TAI01_DOC_PDV=B.pdf">DOCUMENTAÇÃO</a></li>
                     </ol>
                     <div class="text-form">Contribui como instrumentista para a confecção da planta didática</div>
                     
