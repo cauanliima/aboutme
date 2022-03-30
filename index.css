@@ -44,6 +44,7 @@ ul, li {
 }
 p{
   color: var(--white-color);
+  text-align:justify;
   font-size: 20px;
   margin-top: 10px;
   margin-left: 10%;
