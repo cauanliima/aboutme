@@ -25,6 +25,7 @@
 }
 
 body, html {
+  background: var(--black-color);
 	height: 100%;
 	font-family: sans-serif;
   overflow: auto;
@@ -32,6 +33,7 @@ body, html {
 }
 
 ul, li {
+  width: 60%;
 	margin: 0px;
 	list-style-type:circle;
   text-align:justify;
@@ -55,6 +57,7 @@ button, input {
 	outline: none !important;
 	border: none;
   margin-top: 7px;
+  font-size: 35px;
 }
 img{
   margin-top: 20px;
@@ -129,6 +132,18 @@ h2,a{
   justify-content: center;
   align-items: center;
   padding-top: 10px;
+}
+
+.container-default-wrap{
+  width:auto;
+  height: auto;
+  margin-top: 50px;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  flex-flow: row wrap;
 }
 
 .container-default-L {
@@ -233,13 +248,13 @@ a{
 
 
 button {
-  font-size: 30px;
+  color: var(--link-color);
+  font-size: 20px;
   color: var(--white-color);
   line-height: 1.2;
   text-transform: uppercase;
   padding: 0 auto;
-  width: 100%;
-  max-width: 500px;
+  width: 60%;
   height: 80px;
   background-color: var(--main-color);
   border-radius: 5px;

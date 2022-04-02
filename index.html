@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <title>Cauan Marcelo Lima</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="./index.css" media="all">
 
 </head><body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <div id="app" v-cloak>
         <b-container id="app_container" class="container">
             <div class="resize">
-                <div class="container-default">
-                    <div class="container-default"> 
+                <div class="container-default-wrap">
+                    <div class="container-default-single"> 
                     <img src="./img/cauan.jpeg" height="350" width="auto">
                     </div>
                     <div class="container-default-single" >
@@ -43,14 +45,30 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <div class="dropdown container-default">
+                    <button class=" btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                      {{subpag}}
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" width="60%">
+                      <li v-if="subpag!='Resumo'" ><button @click="subpag='Resumo'" class="dropdown-item" type="button">Resumo</button></li>
+                      <li v-if="subpag!='Formação'"><button  @click="subpag='Formação'" class="dropdown-item" type="button">Formação</button></li>
+                      <li v-if="subpag!='Projetos'"><button @click="subpag='Projetos'" class="dropdown-item" type="button">Projetos</button></li>
+                      <li  v-if="subpag!='Produções'"><button  @click="subpag='Produções'" class="dropdown-item" type="button">Produções</button></li>
+                    </ul>
+                  </div>
+
+               <!-- 
                 <div class="container-default" style="margin: 5px;" >
                     <div v-if="subpag!='Resumo'" @click="subpag='Resumo'" class="container-default"><h1 class="link">Resumo</h1></div>
                     <div v-if="subpag!='Formação'" @click="subpag='Formação'" class="container-default"><h1 class="link">Formação</h1></div>
                     <div v-if="subpag!='Projetos'" @click="subpag='Projetos'" class="container-default"><h1 class="link">Projetos</h1></div>
                     <div v-if="subpag!='Produções'" @click="subpag='Produções'" class="container-default"><h1 class="link">Produções</h1></div>
                 </div>
+           
                 <h2 class="container-default" style="text-transform: uppercase"> {{subpag}}</h2>
+                 -->
+
                 <div v-if="subpag=='Resumo'">
                     <p>Me chamo Cauan, tenho 23 anos e sou mineiro, natural de Lagoa Santa.
                     ou graduado em bacharel em Ciência e Tecnologias na Universidade Federal do Rio Grande do Norte (UFRN).
