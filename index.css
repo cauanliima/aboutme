@@ -97,7 +97,6 @@ h2,a{
   max-height: 360px;
   */
   min-width: 90%;
-  min-height: 100ch;
   width: 100%;
   display: block;
   background: var(--black-color);
