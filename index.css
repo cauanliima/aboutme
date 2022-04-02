@@ -101,11 +101,12 @@ h2,a{
   width: 100%;
   display: block;
   background: var(--black-color);
-  min-height: 100vh;
+  min-height: 100vmax;
   height: auto;
 }
 .resize{
   padding: 10px;
+  min-height: 100vmax;
   width: 100%;
   display: block;
   justify-content: center;
