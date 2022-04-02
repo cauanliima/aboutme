@@ -50,11 +50,11 @@
                     <button class=" btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                       {{subpag}}
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" width="60%">
-                      <li v-if="subpag!='Resumo'" ><button @click="subpag='Resumo'" class="dropdown-item" type="button">Resumo</button></li>
-                      <li v-if="subpag!='Formação'"><button  @click="subpag='Formação'" class="dropdown-item" type="button">Formação</button></li>
-                      <li v-if="subpag!='Projetos'"><button @click="subpag='Projetos'" class="dropdown-item" type="button">Projetos</button></li>
-                      <li  v-if="subpag!='Produções'"><button  @click="subpag='Produções'" class="dropdown-item" type="button">Produções</button></li>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li style="width: 80%;" v-if="subpag!='Resumo'" ><button @click="subpag='Resumo'" class="dropdown-item" type="button">Resumo</button></li>
+                      <li style="width: 80%;" v-if="subpag!='Formação'"><button  @click="subpag='Formação'" class="dropdown-item" type="button">Formação</button></li>
+                      <li style="width: 80%;" v-if="subpag!='Projetos'"><button @click="subpag='Projetos'" class="dropdown-item" type="button">Projetos</button></li>
+                      <li style="width: 80%;" v-if="subpag!='Produções'"><button  @click="subpag='Produções'" class="dropdown-item" type="button">Produções</button></li>
                     </ul>
                   </div>
 

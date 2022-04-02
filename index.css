@@ -40,14 +40,14 @@ ul, li {
   color: var(--white-color);
   margin-left: 10%;
   margin-right: 5%;
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 10px;
   text-align:justify;
 }
 p{
   color: var(--white-color);
   text-align:justify;
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 10px;
   margin-left: 10%;
   margin-right: 5%;
@@ -57,8 +57,26 @@ button, input {
 	outline: none !important;
 	border: none;
   margin-top: 7px;
-  font-size: 35px;
+  font-size: 25px;
 }
+button {
+  font-size: 25px;
+  color: var(--white-color);
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 0 auto;
+  width: 80%;
+  max-width: 400px;
+  height: 80px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  margin:3px;
+}
+.dropdown-menu{
+  width: 80%;
+  max-width: 400px;
+}
+
 img{
   margin-top: 20px;
   display: block;
@@ -97,6 +115,7 @@ h2,a{
   max-height: 360px;
   */
   min-width: 90%;
+
   width: 100%;
   display: block;
   background: var(--black-color);
@@ -247,17 +266,3 @@ a{
   justify-content: space-around;
 }
 
-
-button {
-  color: var(--link-color);
-  font-size: 20px;
-  color: var(--white-color);
-  line-height: 1.2;
-  text-transform: uppercase;
-  padding: 0 auto;
-  width: 60%;
-  height: 80px;
-  background-color: var(--main-color);
-  border-radius: 5px;
-  margin:3px;
-}
